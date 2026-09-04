@@ -26,53 +26,51 @@ params:
   defaultTheme: auto
   disableThemeToggle: false
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: false
   ShowRssButtonInSectionTermList: true
-  disableSpecial1stPost: false
+  disableSpecial1stPost: true
   disableScrollToTop: false
+  socialIcons:
+    - name: github
+      url: "https://github.com/FranVilla90"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/francisco-josé-villa-mejias-993196215/"
+    - name: carrd
+      url: "https://franvilla.carrd.co"
   comments: false
   hidemeta: false
   hideSummary: false
   showtoc: true
   tocopen: false
 
-  homeInfoParams:
-    Title: "Hola, soy Fran Villa 👋"
-    Content: >
-      Developer full-stack (Vue.js/JS) aprendiendo Swift/SwiftUI en público.
-      Aquí escribo sobre lo que voy descubriendo — sin calendario, sin presión.
-
-  socialIcons:
-    - name: github
-      url: "https://github.com/FranVilla90"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/TU-USUARIO"
-
 menu:
   main:
-    - identifier: tecnico
-      name: Técnico
-      url: /tecnico/
+    - identifier: indice
+      name: Índice
+      url: /indice/
       weight: 10
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 30
+      weight: 20
+    - identifier: sobre-mi
+      name: Sobre mí
+      url: /sobre-mi/
+      weight: 25
     - identifier: search
       name: Buscar
       url: /search/
-      weight: 40
+      weight: 30
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
+
+

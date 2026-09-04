@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <div class="post-content">
+    {{ range site.Taxonomies.tags.ByCount.Reverse }}
+      <h2 style="margin-top: 2rem;">{{ .Page.Title }} <span style="color: var(--secondary); font-weight: 400; font-size: 0.9em;">({{ .Count }})</span></h2>
+      <ul>
+        {{ range (where site.RegularPages "Params.tags" "intersect" (slice .Page.Title)) }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span style="color: var(--secondary); font-size: 0.85em;">— {{ .Date.Format "2 January 2006" }}</span></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
