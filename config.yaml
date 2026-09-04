@@ -1,0 +1,78 @@
+baseURL: "https://franvilla.dev/"
+languageCode: "es-es"
+title: "Fran Villa"
+theme: "PaperMod"
+
+paginate: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+
+taxonomies:
+  category: categories
+  tag: tags
+
+params:
+  env: production
+  title: "Fran Villa"
+  description: "Notas de un developer full-stack aprendiendo Swift/SwiftUI en público"
+  keywords: [Swift, SwiftUI, iOS, desarrollo]
+  author: "Fran Villa"
+  DateFormat: "2 January 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Hola, soy Fran Villa 👋"
+    Content: >
+      Developer full-stack (Vue.js/JS) aprendiendo Swift/SwiftUI en público.
+      Aquí escribo sobre lo que voy descubriendo — sin calendario, sin presión.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/FranVilla90"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/TU-USUARIO"
+
+menu:
+  main:
+    - identifier: tecnico
+      name: Técnico
+      url: /tecnico/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Buscar
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

@@ -1,0 +1,36 @@
+:root {
+  --theme: #f7f3ec;          /* fondo cálido, no blanco puro */
+  --entry: #ffffff;
+  --primary: #2b2620;        /* texto casi negro, cálido */
+  --secondary: #6b6255;
+  --tertiary: #e8e1d3;
+  --content: #3a352c;
+  --code-bg: #efe9dc;
+  --border: #ddd4c0;
+
+  --hljs-bg: #efe9dc;
+}
+
+.dark {
+  --theme: #1c1a17;          /* gris cálido oscuro, no negro puro */
+  --entry: #242220;
+  --primary: #e8e1d3;
+  --secondary: #a89f8c;
+  --tertiary: #2f2b25;
+  --content: #d8d0c0;
+  --code-bg: #14130f;
+  --border: #3a352c;
+}
+
+/* Enlaces con un tono terracota, coherente con el resto */
+a {
+  color: #b5562f;
+}
+.dark a {
+  color: #e08a5c;
+}
+
+article {
+  line-height: 1.75;
+  font-size: 17px;
+}
