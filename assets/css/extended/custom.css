@@ -84,30 +84,39 @@ article {
   color: var(--primary);
   cursor: pointer;
   padding: 0.4rem;
+  z-index: 10;
+  position: relative;
 }
 
 @media (max-width: 600px) {
   .header-nav {
     position: relative;
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-switches {
+    z-index: 10;
+    position: relative;
   }
 
   .logo {
-    position: static;
-    transform: none;
-    margin: 0 auto;
+    order: 0;
+    flex: 1;
+    text-align: center;
   }
 
   .menu-toggle {
     display: block;
-    order: 2;
   }
 
   #menu {
     display: none;
     order: 3;
+    flex-basis: 100%;
     flex-direction: column;
-    width: 100%;
     text-align: center;
     gap: 0.8rem;
     padding: 1rem 0 0.5rem;
